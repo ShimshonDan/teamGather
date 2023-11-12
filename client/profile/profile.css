@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../static/fonts/Inter-SemiBold.ttf);
+    font-weight: 900;
+}
+
+.logo{
+    display: flex;
+    width: 36vh;
+    height: 9vh;
+    padding-left: 83px;
+    padding-top: 15px;
+}
+
+/* Меню начало */
+
+.header-top{
+    
+    color: white;
+    align-items: center;
+}
+
+/* меню   */
+.menu-list{
+    background-image: url(../static/photo/background.png); 
+    list-style-type: none;
+    display: flex;
+    gap: 1vw; 
+    padding-bottom: 5vh;
+    align-items: center;
+ }
+
+ .menu-list li{
+    padding-top: 3vh;
+ }
+
+ .menu-link-left_1{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+    padding: 10px;
+ }
+
+ .menu-link-left{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+}
+
+.menu-link-right_1{
+    margin-left: 46vh;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+}
+
+.menu-link-right{
+    font-family: raleway;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.menu-body li a:hover{
+    font-family: raleway;
+}
+
+/* Основная часть страницы */
+.top-container{
+    display: inline-flex;
+    gap: 43px;
+}
+.add_photo{
+    width: 220px;
+    height: 235px;
+    margin-top: 27px;
+    margin-left: 145px;
+    border-radius: 44px;
+    background-color: #EBEBEB;
+}
+.ikon_photo{
+    padding-left: 50px;
+    padding-top: 33px;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: raleway;
+	font-size: 14px;
+	color: rgb(255 255 255);
+	text-align: center;
+    padding-top: 10px;
+	background-color:#395ACD;
+	width: 120px;
+	height: 40px;
+    border-radius: 12px;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.add_background{
+    width: 925px;
+    height: 235px;
+    margin-top: 27px;
+    border-radius: 44px;
+    background-color: #EBEBEB;
+}
+.input-background {
+	position: relative;
+	display: inline-block;
+    padding-left: 34px;
+    padding-top: 23px;
+}
+.input-background span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: raleway;
+	font-size: 14px;
+	color: rgb(255 255 255);
+	text-align: center;
+    padding-top: 10px;
+	background-color:#395ACD;
+	width: 185px;
+	height: 40px;
+    border-radius: 12px;
+}
+.input-background input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.user_info{
+    width: 850px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 145px;
+    border-radius: 11px;
+    background-color: #EBEBEB;
+}
+
+.top_info{
+    display: flex;
+    gap: 11px;
+    padding-left: 9px;
+    padding-top: 11px;
+    font-family: raleway;
+    font-size: 14px;
+}
+
+.contact_info{
+    display: flex;
+}
+
+.contact_info div span{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-left: 9px;
+    margin-top: 10px;
+    color: #395ACD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info div p{
+    display: inline-flex;
+    display: flex;
+    margin-left: 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: raleway;
+    font-size: 14px;
+}
+
+.social{
+    display: flex;
+    margin-left: 30px;
+}
+
+.social li{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.social li a{
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+    margin-left: 6px;
+}
+.social li img{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;   
+}
+
+.first-group{
+    display: inline-flex;
+    gap: 43px;
+}
+.expirience_work{
+    width: 220px;
+    height: 140px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: 17px;
+    margin-left: 145px;
+    border-color: #BADAFF;
+}
+.expirience_work p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.my_proj{
+    width: 440px;
+    height: 460px;
+    margin-top: 17px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    border-color: #BADAFF;
+}
+.my_proj p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.my_teams{
+    width: 440px;
+    height: 460px;
+    margin-top: 17px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    border-color: #BADAFF;
+}
+.my_teams p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.education{
+    width: 220px;
+    height: 140px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: -300px;
+    margin-left: 145px;
+    border-color: #BADAFF;
+}
+.education p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.personal_effect{
+    width: 220px;
+    height: 140px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: 21px;
+    margin-left: 145px;
+    border-color: #BADAFF;
+}
+.personal_effect p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.second-group{
+    display: inline-flex;
+    gap: 43px;
+}
+.list_work{
+    width: 220px;
+    height: 140px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: 21px;
+    margin-left: 145px;
+    border-color: #BADAFF;
+}
+.list_work p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.my_activity{
+    width: 925px;
+    height: 235px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: 27px;
+    border-color: #BADAFF;
+}
+
+.my_activity p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+.interests{
+    width: 220px;
+    height: 140px;
+    background-color: #EBEBEB;
+    border-radius: 44px;
+    margin-top: -81px;
+    margin-left: 145px;
+    border-color: #BADAFF;
+    margin-bottom: 41px;
+}
+
+.interests p{
+    font-family: raleway;
+    font-size: 14px;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+
+/* Треугольники слева */
+.layer_1{
+    position: absolute;
+    bottom: -570px;
+    z-index: -1;
+    
+}
+.layer_1 img{
+    display: block;
+    margin-top: 247px;
+    width: 292px;
+    height: 700px;
+}
+
+/* Треугольники справа */
+.layer_2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.layer_2 img{
+    display: block;
+    margin-left: auto;
+}
