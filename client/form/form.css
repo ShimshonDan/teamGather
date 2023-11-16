@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+@font-face {
+    font-family: raleway;
+    src: url(../static/fonts/Raleway-Medium.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: red_hat_medium;
+    src: url(../static/fonts/RedHatDisplay-Medium.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: red_hat_bold;
+    src: url(../static/fonts/RedHatDisplay-ExtraBold.ttf);
+    font-weight: 900;
+}
+
+.logo{
+    display: flex;
+    width: 36vh;
+    height: 9vh;
+    padding-left: 83px;
+    padding-top: 15px;
+}
+
+/* Шапка */
+
+.header-top{
+    
+    color: white;
+    align-items: center;
+}
+
+/* меню   */
+.menu-list{
+    background-image: url(../static/photo/background.png); 
+    list-style-type: none;
+    display: flex;
+    gap: 1vw; 
+    padding-bottom: 5vh;
+    align-items: center;
+ }
+
+ .menu-list li{
+    padding-top: 3vh;
+ }
+
+ .menu-link-left_1{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+    padding: 10px;
+ }
+
+ .menu-link-left{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+}
+
+.menu-link-right_1{
+    margin-left: 46vh;
+    text-decoration: none;
+    font-family: raleway;
+    color: white;
+}
+
+.menu-link-right{
+    font-family: raleway;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.menu-body li a:hover{
+    font-family: raleway;
+}
+
+/* Треугольники */
+.layer_1{
+    position: absolute;
+    bottom: 0;
+}
+.layer_1 img{
+    display: block;
+}
+
+.layer_2{
+    position: absolute;
+    padding-top: 17vh;
+    padding-left: 17vh;
+}
+
+.left-container{
+    display: flex;
+    gap: 10vh;
+}
+
+/* Фото профиля */
+.photo_profile{
+    position: absolute;
+    width: 220px;
+    height: 225px;
+    margin-left: 171px;
+    margin-top: 82px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+
+.photo_profile img{
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 60px;
+}
+
+.photo_profile span{
+    display: flex;
+    padding-left: 60px;
+    padding-top: 40px;
+    font-family: raleway;
+}
+
+.skills{
+    position: absolute;
+    width: 195px;
+    height: 155px;
+    background-color: #D9D9D9;
+    margin-left: 171px;
+    margin-top: 382px;
+    font-family: raleway;
+}
+
+.skills span{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 15px;
+}
+
+.skills-list{
+    display: block;
+    margin-left: 20px;
+    line-height: 1.4em;
+}
+
+.skills-list li{
+    font-family: red_hat_bold;
+    font-weight: bold;
+}
+
+.procent-list{
+    list-style-type: none;
+    margin-top: -113px;
+    margin-left: 155px;
+    line-height: 1.4em;
+}
+
+.procent-list li{
+    font-family: raleway;
+    font-weight: bold;
+}
+
+.top_container{
+    position: absolute;
+    width: 660px;
+    height: 536px;
+    background-color: #fff;
+    margin-left: 445px;
+    margin-top: 55px;
+}
+
+.top-info{
+    font-family: red_hat_bold;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.work-info{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 16px;
+}
+.work-info-2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 176px;
+}
+
+.experience{
+    font-family: red_hat_bold;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.experience-info{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 16px;
+}
+
+.experience-info-2{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 176px;
+    background-color: #0238A8;
+    border-radius: 7px;
+    width: 60px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-me{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 16px;
+}
+
+.about-me-rect{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 20px;
+    background-color: #0238A8;
+    border-radius: 16px;
+    width: 480px;
+    height: 145px;
+}
+
+.about-me-rect span{
+    position: absolute;
+    font-size: 14px;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.bottom-container{
+    display: block;
+}
+
+.hard span{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 460px;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.hard-list{
+    display: block;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 460px;
+    width: 295px;
+    height: 89px;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.soft span{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 460px;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.soft-list{
+    display: block;
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 460px;
+    width: 295px;
+    height: 89px;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Слово expirience */
+.word-experience{
+    position: absolute;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    top: 400px;
+    left: 800px;
+}
+
+/* 3 года */
+.years-exp{
+    position: absolute;
+    margin-top: 338px;
+    margin-left: 800px;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* в голубой рамке */
+.bottom-exp-right{
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    background-color: #728CC1;
+    border-radius: 15px;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 10px;
+    left: 870px;
+    top: 420px;
+}
+.top-exp{
+    display: flex;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 10px;
+    color: #242424;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.bottom-exp{
+    display: flex;
+    font-family: red_hat_bold;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+/* Кнопки */
+.invite_smbd{
+    margin-top: 27px;
+    border-radius: 25px;
+}
+.input-invite {
+	position: relative;
+	display: inline-block;
+    left: 76vw;
+    padding-top: 81px;
+}
+.input-invite a {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: raleway;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+    padding-top: 15px;
+	background-color:#D9D9D9;
+	width: 188px;
+	height: 50px;
+    border-radius: 25px;
+}
+
+.input-show {
+	position: relative;
+	display: inline-block;
+    left: 76vw;
+    padding-top: 20px;
+}
+.input-show a {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: raleway;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+    padding-top: 15px;
+	background-color:#D9D9D9;
+	width: 188px;
+	height: 50px;
+    border-radius: 25px;
+}
