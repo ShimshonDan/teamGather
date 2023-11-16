@@ -1,0 +1,52 @@
+{% extends 'user/loyatLogin.html' %}
+
+{%block titlePart%}Вход{%endblock%}
+
+{%block bodyPart%}
+  <div class="Teamgather">
+    <a href="">TeamGather</a>
+  </div>
+  
+
+  <div class="triangles">
+    <div class="layer_1"><img src="../../static/triangles/Polygon10.png" alt=""></div>
+    <div class="layer_1"><img src="../../static/triangles/Polygon11.png" alt=""></div>
+    <div class="layer_1"><img src="../../static/triangles/Polygon13.png" alt=""></div>
+    <div class="layer_1"><img src="../../static/triangles/Polygon12.png" alt=""></div>
+  </div> 
+
+  <div class="user-container"> <!-- основной контейнер -->
+  <img class="Bykva" src="../../static/ikons/Bykva_White.png" alt="">
+
+  <div class="enter">
+    <h2>Вход в</h2>
+    <h2>TeamGather</h2>
+  </div>
+
+  <div id="user-login"> <!-- форма входа -->
+    <form class="login-form">
+      
+      <p class="fieldset">
+        <input class="fill_email has_border" id="signin-email" type="text" placeholder="Телефон или e-mail">
+      </p>
+
+      <p class="fieldset">
+        <input class="fill_password has_border_pas" id="signin-password" type="password"  placeholder="Пароль">
+      </p>
+      
+          <div class="bottom_cart">
+            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+            <label for="happy">Сохранить вход</label>
+            <a href="#" class="forgot_password">Забыли пароль</a>
+          </div>
+
+      <button type="submit"> <a href="">Продолжить</a></button>
+
+      <div class="circle">
+        <img src="../../static/ikons/circle_gray.png" alt="">
+        <img src="../../static/ikons/circle_gray.png" alt="">
+        <img src="../../static/ikons/circle_gray.png" alt="">
+      </div>
+    </form>
+  </div>
+{%endblock%}

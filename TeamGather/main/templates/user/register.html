@@ -1,0 +1,44 @@
+{% extends 'user/loyatRegister.html' %}
+
+{%block titlePart%}Регистрация{%endblock%}
+
+{%block bodyPart%}
+    <div class="Teamgather">
+      <a href="">TeamGather</a>
+    </div>
+
+    <div class="triangles">
+      <div class="layer_1"><img src="../../static/triangles/Polygon10.png" alt=""></div>
+      <div class="layer_1"><img src="../../static/triangles/Polygon11.png" alt=""></div>
+      <div class="layer_1"><img src="../../static/triangles/Polygon13.png" alt=""></div>
+      <div class="layer_1"><img src="../../static/triangles/Polygon12.png" alt=""></div>
+    </div> 
+
+    <div class="triangles_right">
+        <div class="layer_2"><img src="../../static/triangles/Polygon14.png" alt=""></div>
+        <div class="layer_2"><img src="../../static/triangles/Polygon15.png" alt=""></div>
+        <div class="layer_2"><img src="../../static/triangles/Polygon16.png" alt=""></div>
+        <div class="layer_2"><img src="../../static/triangles/Polygon17.png" alt=""></div>
+    </div>  
+
+    <div class="user-container"> <!-- основной контейнер -->
+        <img class="Bykva" src="../../static/ikons/Bykva_White.png" alt="">
+
+      <div class="enter">
+        <h2>Регистрация</h2>
+        <h2>в TeamGather</h2>
+      </div>
+
+      <div id="user-login"> <!-- форма входа -->
+        <form class="login-form", method="post">
+          {% csrf_token %}
+          <p class="fieldset">{{form.login}}</p>
+          <p class="fieldset">{{form.email}}</p>
+          <p class="fieldset">{{form.numberPhone}}</p>
+          <p class="fieldset">{{form.password}}</p>
+          <span>{{error}}</span>
+          <button type="submit"> <a href="#">Продолжить</a></button>
+        </form>
+      </div>
+    </div>
+{%endblock%}

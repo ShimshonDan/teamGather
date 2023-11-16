@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+@font-face {
+    font-family: raleway;
+    src: url(../../fonts/Raleway-Medium.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: red_hat_medium;
+    src: url(../../fonts/RedHatDisplay-Medium.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: red_hat_bold;
+    src: url(../../fonts/RedHatDisplay-Bold.ttf);
+    font-weight: 900;
+}
+
+
+.Teamgather{
+    font-family: red_hat_bold;
+    padding-left: 13vh;
+    padding-top: 5vh;
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-family: red_hat_medium;
+    font-size: 25px;
+    text-align: center;
+}
+
+.enter{
+    margin-left: 183px;
+    margin-top: 106px;
+    margin-right: 178px;
+}
+
+/* размер окна входа */
+.user-container {
+    position: absolute;
+    width: 510px;
+    height: 570px;
+    left: 483px;
+    right: 487px;
+    top: 103px;
+    bottom: 97px;
+
+    background: #EBEBEB;
+    border-radius: 44px; 
+}
+
+.Bykva{
+    position: absolute;
+    width: 94px;
+    height: 100px;
+    left: 210px;
+    right: 206px;
+}
+
+/*размер шрифта для ввода данных*/
+.login-form input{
+    font-family: raleway;
+    padding-left: 10px;
+    font-size: 16;
+    
+}
+
+ /*ширина высота поля email*/
+ .login-form input.has_border {
+    position: absolute;
+    width: 370px;
+    height: 55px;
+    border-radius: 12px;
+    left: 75px;
+    top: 188px;
+    background-color: #D9D9D9;
+    border: none;
+  }
+   /*ширина высота поля password*/
+ .login-form input.has_border_pas {
+    position: absolute;
+    width: 370px;
+    height: 55px;
+    border-radius: 12px;
+    left: 75px;
+    top: 261px;
+    background-color: #D9D9D9;
+    border: none;
+  }
+
+.bottom_cart{
+    color: #7D7D7D;
+    display: flex;
+    font-family: raleway;
+    font-size: 16px;
+    padding-top: 22vh;
+    padding-left: 73px;
+}
+
+.forgot_password{
+    color: #7D7D7D;
+    text-decoration: none;
+    padding-left: 13vh;
+    padding-top: 0.6vh;
+}
+
+/* кнопка сохранить вход */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #5874D6;
+    border-radius: 1em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .custom-checkbox:checked+label::before {
+    border-color: #5874D6;
+    background-color: #5874D6;
+    background-image: url("../../ikons/save_enter.svg");
+  }
+
+  /* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #495FB0;
+  }
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+  .custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+/* конец кнопки */
+
+button{
+    box-sizing: border-box;
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    left: 182px;
+    top: 390px;
+    background: #395ACD;
+    border-radius: 12px;
+    border: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-family: raleway;
+    font-size: 16px;
+}
+
+/* Треугольники */
+.layer_1{
+    position: absolute;
+    bottom: 0;
+}
+.layer_1 img{
+    display: block;
+}
+
+/* Кружочки */
+.circle{
+    margin-top: 18vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(110px,1fr));
+    grid-gap: 50px;
+    justify-items: center;
+} 

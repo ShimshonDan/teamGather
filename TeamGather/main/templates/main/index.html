@@ -1,0 +1,30 @@
+{% extends 'main/loyat.html' %}
+
+{%block titlePart%}Title{%endblock%}
+
+{%block bodyPart%}
+    <header class="header">
+        <div class="header-top">
+            <nav class="menu-body">
+                <ul class="menu-list">
+                    <li><a href="" class="menu-link-left_1">Собрать команду</a></li>
+                    <li><a href="find_proj.html" class="menu-link-left">Найти проект</a></li>
+                    <li><a href="{% url 'loginUser' %}" class="menu-link-right_1">Вход</a></li>
+                    <li><a href="{% url 'addUser' %}" class="menu-link-right">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="page-content">
+        <div class="page-add">
+            <img class="background" src="../../static/photo/background.png" alt="">
+            <img class="logo" src="../../static/ikons/Logotip_White.png" alt=""> 
+        </div>
+
+        <div class="text">
+            <h1>TEAM</h1>
+            <h2>GATHER</h2>
+        </div>
+    </div>
+{%endblock%}
